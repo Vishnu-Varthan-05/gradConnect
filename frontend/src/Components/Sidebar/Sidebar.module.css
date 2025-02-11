@@ -1,0 +1,23 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    border-right: 2px snow solid;
+    box-shadow: var(--sha);
+    padding: 0 1.5em;
+}
+
+li{
+    padding: 20px;
+    transition: background-color 1ms linear;
+}
+li:hover{
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: white;
+}
+ul{
+    list-style: none;
+}

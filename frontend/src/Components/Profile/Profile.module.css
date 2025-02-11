@@ -1,0 +1,21 @@
+.profile{
+    margin: 1em;
+    padding: 1em;
+    width: fit-content;
+    text-align: center;
+}
+
+.profile img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.profile p{
+    margin-top: 1em;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+}

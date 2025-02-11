@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  
+  --blue: #3674B5;
+  --sha :0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075);
+  --blueSha: 1px 2px 2px hsl(220deg 60% 50% / 0.2),
+  2px 4px 4px hsl(220deg 60% 50% / 0.2),
+  4px 8px 8px hsl(220deg 60% 50% / 0.2),
+  8px 16px 16px hsl(220deg 60% 50% / 0.2),
+  16px 32px 32px hsl(220deg 60% 50% / 0.2);
+}
+
+a{
+  text-decoration: none;
+  color: black;   
+}
