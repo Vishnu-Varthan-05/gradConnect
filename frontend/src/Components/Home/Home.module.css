@@ -1,0 +1,16 @@
+.homeContainer{
+    height: 100vh;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: center;
+}
+
+.post{
+    flex: 7;
+}
+
+.suggestion{
+    flex: 3;
+    height: 100vh;
+    overflow-x: scroll;
+}
