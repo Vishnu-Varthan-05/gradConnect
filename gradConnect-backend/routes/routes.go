@@ -16,8 +16,14 @@ func SetupRoutes(router *gin.Engine){
 	router.GET("/interest", handlers.GetAllInterests)
 	router.POST("/interest", handlers.AddInterest)
 
+	
 	protected := router.Group("/api")
 	protected.Use(middleware.AuthMiddleware())
+
+	protected.POST("/user/interest", handlers.AddUserInterest)
+	protected.POST("/user/profilePhoto", handlers.AddUserProfile)
+	
+	
 	protected.GET("/hello", func(ctx *gin.Context) {
 		fullname, _ := ctx.Get("fullname")  
     	roles, _ := ctx.Get("roles")

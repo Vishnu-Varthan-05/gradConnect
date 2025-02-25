@@ -16,9 +16,8 @@ func main() {
 	seeders.Seed()
 
 	router := gin.Default()
-	router.StaticFS("/upload",http.Dir("uploads"))
 	router.Use(cors.Default())
+	router.StaticFS("/upload",http.Dir("uploads"))
 	routes.SetupRoutes(router)
-	
 	router.Run(":5000")
 }

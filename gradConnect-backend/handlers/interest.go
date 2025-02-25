@@ -19,7 +19,7 @@ func GetAllInterests(c *gin.Context) {
 
 func AddInterest(c *gin.Context) {
 	var input struct{
-		Name string
+		Name string `json:"name"`
 	}
 	if err := c.ShouldBindJSON(&input); err!=nil{
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
